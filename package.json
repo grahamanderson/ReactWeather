@@ -4,7 +4,8 @@
   "description": "React Boilerplate",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "heroku": "node server.js"
   },
   "author": "Graham Anderson",
   "license": "MIT",
