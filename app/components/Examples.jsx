@@ -4,9 +4,8 @@ const Examples = () => {
   // var fish = getFish(props.species);
   return (
 <div>
-  <h1>Here are Examples!</h1>
-  <p>Welcome to the examples page</p>
-  <p>This is another paragraph</p>
+  <h1>Examples</h1>
+  <p>This is an examples component</p>
 </div>
   )
 };
