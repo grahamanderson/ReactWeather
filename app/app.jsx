@@ -7,7 +7,7 @@ import Weather from 'Weather';
 import About from 'About';
 import Examples from 'Examples';
 
-var $ = require('jquery');
+import $ from 'jquery'
 import '!style-loader!css-loader!foundation-sites/dist/css/foundation.min.css'
 $(document).foundation();
 
