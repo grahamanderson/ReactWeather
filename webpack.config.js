@@ -10,8 +10,8 @@ var webpack = require('webpack')
 
 module.exports = {
   entry: [
-    '!!script-loader!jquery/dist/jquery.min.js',
-    '!!script-loader!foundation-sites/dist/js/foundation.min.js',
+    '!script-loader!jquery/dist/jquery.min.js',
+    '!script-loader!foundation-sites/dist/js/foundation.min.js',
     './app/app.jsx'
   ],
   externals: {

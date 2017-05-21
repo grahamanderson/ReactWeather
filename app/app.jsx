@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter, Route, hashHistory } from 'react-router-dom';
+
 import Main from 'Main';
 import Weather from 'Weather';
 import About from 'About';
 import Examples from 'Examples';
 
 var $ = require('jquery');
-require('!style-loader!css-loader!foundation-sites/dist/css/foundation.min.css')
+import '!style-loader!css-loader!foundation-sites/dist/css/foundation.min.css'
 $(document).foundation();
 
 ReactDOM.render(
