@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+var webpack = require('webpack')
+
 // import HtmlWebpackPlugin from 'html-webpack-plugin';
 // import path from 'path';
 
@@ -7,7 +9,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 // import {HtmlWebpackPlugin} from 'html-webpack-plugin'
 
 module.exports = {
-  entry: './app/app.jsx',
+  entry: [
+    '!!script-loader!jquery/dist/jquery.min.js',
+    '!!script-loader!foundation-sites/dist/js/foundation.min.js',
+    './app/app.jsx'
+  ],
+  externals: {
+    jquery: 'jQuery'
+  },
+
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index_bundle.js',
@@ -40,6 +50,10 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'app/index.html'
+    }),
+    new webpack.ProvidePlugin({
+      '$': 'jquery',
+      'jQuery': 'jquery'
     })
   ]
 };
