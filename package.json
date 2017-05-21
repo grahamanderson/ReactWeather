@@ -4,7 +4,10 @@
   "description": "React Boilerplate",
   "main": "index.js",
   "scripts": {
-    "devstart": "webpack-dev-server --open",
+    "dev": "webpack-dev-server --open",
+    "test": "NODE_ENV=test karma start",
+    "build": "webpack",
+    "postinstall": "npm run build",
     "start": "node server.js"
   },
   "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
