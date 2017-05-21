@@ -1,4 +1,4 @@
-import express from 'express'
+var express = require('express')
 
 // Create our app
 var app = express();
@@ -9,7 +9,6 @@ app.use(function (req, res, next) {
     next();
   }else {
     res.redirect('http://' + req.hostname + req.url)
-
   }
 })
 
