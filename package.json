@@ -10,7 +10,7 @@
     "postinstall": "npm run build",
     "start": "node server.js"
   },
-  "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
+  /*"heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",*/
   "author": "Graham Anderson",
   "license": "MIT",
   "babel": {
