@@ -6,6 +6,7 @@ const Examples = () => {
 <div>
   <h1>Here are Examples!</h1>
   <p>Welcome to the examples page</p>
+  <p>This is another paragraph</p>
 </div>
   )
 };
