@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Examples = (props) => {
+const Examples = () => {
   // var fish = getFish(props.species);
   return (
-    <h1>Here are Examples</h1>
+    <h1>Here are Examples!</h1>
   )
 };
 
