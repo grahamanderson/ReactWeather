@@ -10,6 +10,11 @@
     "postinstall": "npm run build",
     "start": "node server.js"
   },
+
+  "engines": {
+    "node": "7.10.0"
+  },
+
   "author": "Graham Anderson",
   "license": "MIT",
   "babel": {
